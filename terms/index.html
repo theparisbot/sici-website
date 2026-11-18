@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SiCi Terms of Use</title>
-<meta name="description" content="SiCi reads your attendance record card, tells you where you stand, and keeps a receipt of every shift you trade.">
+<title>Sici Terms of Use</title>
+<meta name="description" content="Sici reads your attendance record card, tells you where you stand, and keeps a receipt of every shift you trade.">
 <link rel="icon" type="image/png" href="../starpaw-paw.png">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}*{box-sizing:border-box}</style>
 </head>
@@ -96,6 +96,37 @@ p{margin:0}
 .paris img{width:26px;height:auto;flex:none;margin-top:2px}
 .fine{font-size:12px;color:var(--muted)}
 
+
+/* real app screenshots */
+.shot-wrap{margin:0;display:grid;gap:10px;justify-items:center;min-width:0}
+.shot{width:100%;max-width:360px;border-radius:30px;border:9px solid #10131B;background:#05070D;overflow:hidden;box-shadow:0 24px 50px -28px rgba(22,18,31,.55)}
+.shot img{display:block;width:100%;height:auto}
+.shot-wrap figcaption{font-size:13px;color:var(--muted);text-align:center;max-width:36ch}
+.hero-shot .shot{max-width:340px}
+.feature .shot-wrap{margin-top:8px}
+.feature .shot{max-width:300px;border-width:7px;border-radius:26px}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;align-items:start}
+.gallery .shot{max-width:260px;border-width:7px;border-radius:26px}
+.shot-wrap figcaption b{color:var(--ink);font-weight:600}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.gallery{gap:14px}.gallery .shot{border-width:5px;border-radius:20px}}
+
+
+/* Paris */
+.paris-wrap{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center}
+.paris-art{background:#F7F3EF;border:1px solid var(--line);border-radius:24px;padding:24px;display:grid;justify-items:center;gap:14px}
+.paris-main{width:min(220px,70%);height:auto}
+.paris-faces{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:300px}
+.paris-faces img{width:100%;height:auto;border-radius:14px;background:#fff;border:1px solid #E6DDF3}
+.paris-copy{display:grid;gap:14px}
+.paris-copy .lede{max-width:52ch}
+.paris-fine{font-size:14px;color:var(--muted);margin:0}
+.paris-copy h2{font-size:clamp(28px,4.4vw,38px)}
+.paris-list{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.paris-list li{padding-left:28px;position:relative}
+.paris-list li::before{content:"";position:absolute;left:4px;top:.55em;width:12px;height:12px;border-radius:50%;background:#7B61C9}
+@media (max-width:760px){.paris-wrap{grid-template-columns:1fr}}
+
 /* sections */
 section.band .wrap{padding-block:64px;display:grid;gap:32px}
 section.band.alt{background:var(--surface);border-block:1px solid var(--line)}
@@ -185,7 +216,7 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="../#home" aria-label="SiCi home">
+    <a class="brand" href="../#home" aria-label="Sici home">
       <img class="wm-light" src="../sici-wordmark-cream.svg" alt="Sici">
       <img class="wm-dark" src="../sici-wordmark-dark.svg" alt="Sici">
     </a>
@@ -211,73 +242,92 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
           <div class="tagline">Should I Call In</div>
         </div>
         <h1>Know where you stand. <span>Never lose track of a trade.</span></h1>
-        <p class="lede">SiCi reads your attendance record card, tells you in plain words where you stand, and keeps a receipt of every shift you trade. Built by a cast member, for the people who work the floor.</p>
+        <p class="lede">Sici reads your attendance record card, tells you in plain words where you stand, and keeps a receipt of every shift you trade. Built by a cast member, for the people who work the floor.</p>
         <div class="cta-row">
           <button class="btn" id="notify-hero" type="button" data-notify>Notify me when my location opens</button>
-          <a class="btn ghost" href="../#how" style="text-decoration:none">See how it works</a>
+          <a class="btn ghost" href="#how" style="text-decoration:none">See how it works</a>
         </div>
         <p class="note" data-notify-note hidden>Sign-up isn't open yet. This button is a placeholder until a notify list is set up.</p>
       </div>
 
-      <div class="card" aria-label="Sample attendance status">
-        <div class="card-head">
-          <h3>Where you stand</h3>
-          <span class="pill">Sample</span>
-        </div>
-        <div class="clear">
-          <b>12</b>
-          <span><strong>days until you're back in the clear</strong><br>One more call-out before then reaches your 30-day limit.</span>
-        </div>
-        <div class="meters">
-          <div class="meter"><span>30 days</span><div class="bar"><i class="warn" style="width:66%"></i></div><span class="n">2 of 3</span></div>
-          <div class="meter"><span>90 days</span><div class="bar"><i style="width:50%"></i></div><span class="n">3 of 6</span></div>
-          <div class="meter"><span>180 days</span><div class="bar"><i style="width:44%"></i></div><span class="n">4 of 9</span></div>
-          <div class="meter"><span>365 days</span><div class="bar"><i style="width:42%"></i></div><span class="n">5 of 12</span></div>
-        </div>
-        <div class="paris">
-          <img class="paw-hop" src="../starpaw-paw.png" alt="" width="26" height="25">
-          <p><strong>Paris:</strong> Before you call in Saturday, want to offer the shift to your location first? If someone takes it, nothing goes on your record.</p>
-        </div>
-        <p class="fine">Example only. SiCi's status is an estimate from what you enter.</p>
-      </div>
+      <figure class="shot-wrap hero-shot">
+        <div class="shot"><img src="../shot-callin.jpg" alt="Sici's risk card reading Low risk, 7.5 of 12 points, above a Should I call in card that says one more point would put you at 8 and a half of 12, with Trade it and Give it away buttons" width="660" height="1052"></div>
+        <figcaption>Where you stand, and what to try before you call in.</figcaption>
+      </figure>
     </div>
   </section>
 
   <section class="band alt" id="features">
     <div class="wrap">
       <div class="sec-head">
-        <span class="label">What SiCi does</span>
+        <span class="label">What Sici does</span>
         <h2>It works for you on day one, even if nobody else at your location has it yet.</h2>
       </div>
       <div class="features">
         <article class="feature">
           <div class="chip c-green">1</div>
           <h3>Your record card, in plain words</h3>
-          <p>Import a screenshot or PDF of your record card. SiCi counts every window for you, shows how close you are to each limit, and counts down the days until you're back in the clear. Paris explains it without the jargon.</p>
+          <p>Import a screenshot or PDF of your record card. Sici counts every window for you, shows how close you are to each limit, and counts down the days until you're back in the clear. Paris explains it without the jargon.</p>
+          <figure class="shot-wrap"><div class="shot"><img src="../shot-ifpoint.jpg" alt="The If 1 point view: each attendance window projected with one more point, with a note that nothing is submitted" width="660" height="1101" loading="lazy"></div><figcaption>See what one more point would do before it happens.</figcaption></figure>
         </article>
         <article class="feature">
           <div class="chip c-gold">2</div>
           <h3>Every trade on the record</h3>
           <p>Log each trade and giveaway, including the ones you worked out in a group chat or face to face. When you wonder whether you gave that day away or picked it up, the answer is one tap away.</p>
-          <div class="receipt" aria-label="Sample trade log">
-            <div><span>Sat, Nov 21</span><em>Gave away to Jordan</em></div>
-            <div><span>Tue, Nov 24</span><em>Picked up from Ana</em></div>
-            <div><span>Fri, Nov 27</span><em>Swapped with Dee</em></div>
-          </div>
+          <figure class="shot-wrap"><div class="shot"><img src="../shot-history.jpg" alt="History list of imported, edited and changed shifts, plus a Wire trade and a change log entry" width="660" height="1129" loading="lazy"></div><figcaption>Every shift change and trade, kept in History.</figcaption></figure>
         </article>
         <article class="feature">
           <div class="chip c-blue">3</div>
-          <h3>Your location's board</h3>
-          <p>Post a trade or a giveaway to your location and see how many offers it has. Boards open one location at a time, so the one you join is busy enough to be worth checking.</p>
+          <h3>The Wire</h3>
+          <p>Put a shift up for trade or giveaway, or say you're available to work. It goes only to coworkers at your location in your classification. A listing is a request, not an approved change.</p>
+          <figure class="shot-wrap"><div class="shot"><img src="../shot-wire.jpg" alt="The Wire filtered to Location, with tabs for Giveaways, Trades and Available, and two trade listings showing no offers yet" width="660" height="1027" loading="lazy"></div><figcaption>The Wire at your location: two trades up, no offers yet.</figcaption></figure>
         </article>
         <article class="feature">
           <div class="chip c-red">4</div>
           <h3>The rest of your workday</h3>
           <p>Paris reads you today's schedule. Flight Plan times your commute and warns you about severe weather before a shift. The Union page puts your union a tap away. All of it in six languages.</p>
-          <div class="sections-list" aria-label="Sections in the app">
-            <span>Mission</span><span>Shifts</span><span>SiCi</span><span>Memory</span><span>Comms</span><span>Flight Plan</span><span>Union</span><span>Wire and Squad</span>
-          </div>
+          <figure class="shot-wrap"><div class="shot"><img src="../shot-mission-real.jpg" alt="The Mission card: next shift in and out times, when to leave, shift length, and today's park hours, parade, crowds and waits" width="660" height="937" loading="lazy"></div><figcaption>Your next shift, when to leave, and how today looks.</figcaption></figure>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="paris">
+    <div class="wrap paris-wrap">
+      <div class="paris-art" aria-hidden="false">
+        <img class="paris-main" src="../paris-sit.png" alt="Paris, a pixel-art Jack Russell with a red collar, sitting and smiling" width="195" height="200">
+        <div class="paris-faces">
+          <img src="../paris-curious.png" alt="Paris looking curious" width="180" height="180" loading="lazy">
+          <img src="../paris-smile.png" alt="Paris with a small smile" width="178" height="170" loading="lazy">
+          <img src="../paris-happy.png" alt="Paris looking happy" width="173" height="160" loading="lazy">
+        </div>
+      </div>
+      <div class="paris-copy">
+        <span class="label">Meet Paris</span>
+        <h2>Your AI companion, right in the app.</h2>
+        <p class="lede">Paris is Sici's AI companion: a small but mighty Jack Russell with big curiosity and an even bigger heart. She reads your record with you, tells you in plain words where you stand, and helps you think it through before you call in.</p>
+        <ul class="paris-list">
+          <li><b>Ask Paris.</b> Tap Ask Paris from any screen and ask in your own words.</li>
+          <li><b>No jargon.</b> She explains your windows and points the way you'd explain them to a friend.</li>
+          <li><b>Your contract, cited.</b> Ask about your contract and get a plain answer with the section it comes from.</li>
+          <li><b>Your day.</b> She greets you on Mission home with what's ahead.</li>
+        </ul>
+        <p class="paris-fine">Paris can get things wrong, so check anything important against your record card.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="inside">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label">A look inside</span>
+        <h2>Real screens from the app.</h2>
+      </div>
+      <div class="gallery">
+        <figure class="shot-wrap"><div class="shot"><img src="../shot-mission.jpg" alt="Mission home: Paris says You work today, a Next shift card, and the next seven days" width="660" height="1145" loading="lazy"></div><figcaption><b>Mission.</b> Your day at a glance, with Paris. Sample data.</figcaption></figure>
+        <figure class="shot-wrap"><div class="shot"><img src="../shot-week.jpg" alt="A week of shift cards with days off, days available to work, and a shift tagged Wire" width="660" height="1087" loading="lazy"></div><figcaption><b>Shifts.</b> Your week, day by day.</figcaption></figure>
+        <figure class="shot-wrap"><div class="shot"><img src="../shot-union.jpg" alt="Union page with a Member badge, a Contact a steward button, shop stewards, meetings, the contract PDF and Ask Paris about the contract" width="660" height="1034" loading="lazy"></div><figcaption><b>Union.</b> Stewards, meetings and your contract.</figcaption></figure>
+        <figure class="shot-wrap"><div class="shot"><img src="../shot-goto.jpg" alt="Go to sheet with eight sections: Mission, Shifts, Sici, History, Comms, Rosters, Union and Flight Plan" width="660" height="1145" loading="lazy"></div><figcaption><b>Go to.</b> Every section, one tap away.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -289,9 +339,9 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
         <h2>From a worried morning to a covered shift.</h2>
       </div>
       <ol class="steps">
-        <li><h3>Import your record card</h3><p>Snap or upload it. You check everything SiCi read before anything is saved.</p></li>
+        <li><h3>Import your record card</h3><p>Snap or upload it. You check everything Sici read before anything is saved.</p></li>
         <li><h3>See where you stand</h3><p>Every window, every limit, and how many days until you're clear.</p></li>
-        <li><h3>Offer the shift first</h3><p>When you're thinking of calling in, SiCi helps you give the shift away instead.</p></li>
+        <li><h3>Offer the shift first</h3><p>When you're thinking of calling in, Sici helps you give the shift away instead.</p></li>
         <li><h3>Keep the receipt</h3><p>Every trade lands in your log, so you always know who has which day.</p></li>
       </ol>
     </div>
@@ -305,7 +355,7 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
       </div>
       <div class="promises">
         <div class="promise"><h3>Nobody else sees your record</h3><p>Your attendance record isn't shown to coworkers, crews, stewards or any employer. There's no setting that shares it.</p></div>
-        <div class="promise"><h3>Location only when you ask</h3><p>SiCi reads your location only when you tap to set it or start a Flight Plan trip. Never in the background.</p></div>
+        <div class="promise"><h3>Location only when you ask</h3><p>Sici reads your location only when you tap to set it or start a Flight Plan trip. Never in the background.</p></div>
         <div class="promise"><h3>Leave whenever you want</h3><p>Delete your account from inside the app, any time. Your sign-in and your account data are removed.</p></div>
       </div>
     </div>
@@ -315,8 +365,8 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
     <div class="wrap">
       <div class="box">
         <span class="label">Now piloting at one table-service location</span>
-        <h2>Want SiCi at your location?</h2>
-        <p style="color:var(--muted);max-width:56ch">Locations open one at a time, as soon as enough people there ask. Leave your name once sign-up opens, and bring a coworker. Every person who asks gets your board closer to opening.</p>
+        <h2>Want Sici at your location?</h2>
+        <p style="color:var(--muted);max-width:56ch">Locations open one at a time, as soon as enough people there ask. Leave your name once sign-up opens, and bring a coworker. Every person who asks gets your location's Wire closer to opening.</p>
         <div class="cta-row">
           <button class="btn" id="notify-join" type="button" data-notify>Ask for my location</button>
         </div>
@@ -330,15 +380,15 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
 <div id="view-privacy" data-view="privacy" class="doc" hidden>
   <div class="wrap"><article>
     <span class="label">Privacy policy</span>
-    <h1>SiCi privacy policy</h1>
+    <h1>Sici privacy policy</h1>
     <div class="draftbox"><strong>Draft for Mathew's review. Not in effect.</strong><span>Have a lawyer review this before it goes on the App Store. Highlighted items are placeholders to fill in.</span></div>
-    <p>Effective date: <span class="ph">[date]</span>. This policy explains what SiCi ("Should I Call In") collects, why, who can see it, and how you can delete it. SiCi is operated by <span class="ph">[legal company name]</span> ("we").</p>
+    <p>Effective date: <span class="ph">[date]</span>. This policy explains what Sici ("Should I Call In") collects, why, who can see it, and how you can delete it. Sici is operated by <span class="ph">[legal company name]</span> ("we").</p>
 
     <h2>The short version</h2>
     <ul>
       <li>Your attendance record is private to you. We never show it to coworkers, crews, stewards or any employer.</li>
       <li>We don't sell your data, and we don't use it for advertising.</li>
-      <li>SiCi reads your location only when you tap to use it, never in the background.</li>
+      <li>Sici reads your location only when you tap to use it, never in the background.</li>
       <li>You can delete your account from inside the app at any time.</li>
     </ul>
 
@@ -350,23 +400,23 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
       <li><strong>Schedule:</strong> shifts you enter or import from a schedule screenshot.</li>
       <li><strong>Trades and posts:</strong> trades and giveaways you log or post, offers and claims, and messages you send in Comms.</li>
       <li><strong>Location:</strong> a home base point, only when you tap to set it, and your position at each checkpoint of a Flight Plan trip you start. No background tracking and no location history.</li>
-      <li><strong>Calendar:</strong> only if you choose a calendar for SiCi to add your confirmed shifts to. SiCi writes to that calendar and doesn't read your other events. <span class="ph">[confirm with the app]</span></li>
+      <li><strong>Calendar:</strong> only if you choose a calendar for Sici to add your confirmed shifts to. Sici writes to that calendar and doesn't read your other events. <span class="ph">[confirm with the app]</span></li>
       <li><strong>Notifications:</strong> a device token so we can send the alerts you turn on.</li>
       <li><strong>Support:</strong> anything you send us when you ask for help or report a problem.</li>
     </ul>
 
     <h2>How we use it</h2>
-    <p>We use your information to run SiCi's features: working out your attendance status, showing your schedule and trade log, running your location's board, timing your commute, sending the alerts you ask for, and answering your support requests. We also use it to keep SiCi secure and to fix problems.</p>
+    <p>We use your information to run Sici's features: working out your attendance status, showing your schedule and trade log, running the Wire at your location, timing your commute, sending the alerts you ask for, and answering your support requests. We also use it to keep Sici secure and to fix problems.</p>
 
     <h2>Who can see what</h2>
     <ul>
       <li><strong>Only you:</strong> your attendance record, your record card imports, your status, your home base and your trips.</li>
-      <li><strong>People in your location's group:</strong> your name, role, hire date, photo if you add one, and anything you post to the board.</li>
+      <li><strong>People in your location's group:</strong> your name, role, hire date, photo if you add one, and anything you post to the Wire.</li>
       <li><strong>People you message:</strong> the messages you send them.</li>
     </ul>
 
     <h2>Service providers</h2>
-    <p>We use a small number of companies to run SiCi. They process data only to provide their service to us.</p>
+    <p>We use a small number of companies to run Sici. They process data only to provide their service to us.</p>
     <ul>
       <li>Hosting, database and sign-in: <span class="ph">Supabase, confirm</span></li>
       <li>Reading screenshots and record cards: an AI text-reading service, <span class="ph">OpenAI, confirm</span>. The image is sent only to read its text, and you review the result before it's saved. <span class="ph">[confirm the provider's data retention terms]</span></li>
@@ -382,7 +432,7 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
     <p>Data is encrypted in transit, and access is limited by rules that keep each person's attendance record separate from everyone else's. No system is perfectly secure, so please use a strong password.</p>
 
     <h2>Age</h2>
-    <p>SiCi is meant for working adults. You must be at least <span class="ph">[minimum age]</span> to use it.</p>
+    <p>Sici is meant for working adults. You must be at least <span class="ph">[minimum age]</span> to use it.</p>
 
     <h2>Your choices and rights</h2>
     <p>You can see and change your information in the app, export or correct it by contacting us, and delete it at any time. Depending on where you live, you may have more rights. Contact us to use them.</p>
@@ -399,18 +449,18 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
 <div id="view-terms" data-view="terms" class="doc" hidden>
   <div class="wrap"><article>
     <span class="label">Terms of use</span>
-    <h1>SiCi terms of use</h1>
+    <h1>Sici terms of use</h1>
     <div class="draftbox"><strong>Draft for Mathew's review. Not in effect.</strong><span>Have a lawyer review this before it goes on the App Store. Highlighted items are placeholders to fill in.</span></div>
-    <p>Effective date: <span class="ph">[date]</span>. These terms are an agreement between you and <span class="ph">[legal company name]</span> about your use of SiCi. By using SiCi, you agree to them.</p>
+    <p>Effective date: <span class="ph">[date]</span>. These terms are an agreement between you and <span class="ph">[legal company name]</span> about your use of Sici. By using Sici, you agree to them.</p>
 
-    <h2>SiCi is independent</h2>
-    <p>SiCi is an independent app. It isn't made, endorsed or sponsored by any employer or union, and it isn't connected to any employer's systems.</p>
+    <h2>Sici is independent</h2>
+    <p>Sici is an independent app. It isn't made, endorsed or sponsored by any employer or union, and it isn't connected to any employer's systems.</p>
 
     <h2>Your status is an estimate</h2>
-    <p>SiCi works out your attendance status from what you enter and import. It's an estimate, not an official record and not legal or employment advice. Your employer's records, your employer's policies and your union agreement decide what actually counts. Check anything important with them or your steward.</p>
+    <p>Sici works out your attendance status from what you enter and import. It's an estimate, not an official record and not legal or employment advice. Your employer's records, your employer's policies and your union agreement decide what actually counts. Check anything important with them or your steward.</p>
 
-    <h2>Trades happen outside SiCi</h2>
-    <p>SiCi helps you coordinate and log trades and giveaways. It doesn't submit anything to your employer. A trade becomes official only when you complete it through your employer's own process. You're responsible for working the shifts you agree to take.</p>
+    <h2>Trades happen outside Sici</h2>
+    <p>Sici helps you coordinate and log trades and giveaways. It doesn't submit anything to your employer. A trade becomes official only when you complete it through your employer's own process. You're responsible for working the shifts you agree to take.</p>
 
     <h2>Your account</h2>
     <ul>
@@ -419,26 +469,26 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
       <li>You must be at least <span class="ph">[minimum age]</span>.</li>
     </ul>
 
-    <h2>Using SiCi fairly</h2>
+    <h2>Using Sici fairly</h2>
     <ul>
       <li>Don't post fake trades or giveaways, and don't claim a shift you don't mean to work.</li>
       <li>Don't harass anyone, or share someone else's private information.</li>
-      <li>Don't use SiCi to break your employer's rules. Use it on your own time and your own device.</li>
+      <li>Don't use Sici to break your employer's rules. Use it on your own time and your own device.</li>
       <li>Don't try to get into data that isn't yours, or disrupt the service.</li>
     </ul>
     <p>We may remove posts, or suspend or close accounts, that break these terms.</p>
 
     <h2>What you post</h2>
-    <p>You own what you post. You give us permission to store and show it to the people it's meant for, only so SiCi can work.</p>
+    <p>You own what you post. You give us permission to store and show it to the people it's meant for, only so Sici can work.</p>
 
     <h2>No warranty</h2>
-    <p>SiCi is provided as is. We work hard to keep it accurate and available, but we can't promise it will always be either.</p>
+    <p>Sici is provided as is. We work hard to keep it accurate and available, but we can't promise it will always be either.</p>
 
     <h2>Limit of liability</h2>
-    <p>To the extent the law allows, we aren't liable for indirect or consequential losses, including any employment outcome, from your use of SiCi. <span class="ph">[lawyer to finalize]</span></p>
+    <p>To the extent the law allows, we aren't liable for indirect or consequential losses, including any employment outcome, from your use of Sici. <span class="ph">[lawyer to finalize]</span></p>
 
     <h2>Ending your use</h2>
-    <p>You can stop using SiCi and delete your account at any time. We may end the service with notice.</p>
+    <p>You can stop using Sici and delete your account at any time. We may end the service with notice.</p>
 
     <h2>Governing law</h2>
     <p>These terms are governed by the laws of <span class="ph">[state]</span>.</p>
@@ -452,23 +502,23 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
 <div id="view-support" data-view="support" class="doc" hidden>
   <div class="wrap"><article>
     <span class="label">Support</span>
-    <h1>Get help with SiCi</h1>
+    <h1>Get help with Sici</h1>
     <div class="draftbox"><strong>Draft for Mathew's review.</strong><span>The contact details are placeholders.</span></div>
     <p>Write to <span class="ph">[support email]</span> and a real person will answer. Tell us what you were doing, what you expected, and what happened instead. A screenshot helps, but please cover any names that aren't yours.</p>
 
     <h2>Common questions</h2>
     <div class="faq">
-      <details><summary>How do I import my record card?</summary><p>Take a screenshot or save a PDF of your record card, then import it in SiCi. You'll see everything SiCi read and can fix anything before it's saved.</p></details>
+      <details><summary>How do I import my record card?</summary><p>Take a screenshot or save a PDF of your record card, then import it in Sici. You'll see everything Sici read and can fix anything before it's saved.</p></details>
       <details><summary>Is my status official?</summary><p>No. It's an estimate from what you entered. Your employer's records and your union agreement decide what counts. If something looks wrong, check your entries first, then ask your steward.</p></details>
       <details><summary>Who can see my attendance record?</summary><p>Only you. It isn't shown to coworkers, crews, stewards or any employer.</p></details>
-      <details><summary>Does a trade in SiCi make it official?</summary><p>No. SiCi helps you find someone and keeps a receipt. You still complete the trade through your employer's own process.</p></details>
+      <details><summary>Does a trade in Sici make it official?</summary><p>No. Sici helps you find someone and keeps a receipt. You still complete the trade through your employer's own process.</p></details>
       <details><summary>My location isn't open yet.</summary><p>Locations open one at a time, once enough people there ask. Everything that works on your own, like your record card and your trade log, works today.</p></details>
       <details><summary>How do I delete my account?</summary><p>Open your Account page in the app and choose Delete account. You'll type DELETE to confirm. Your sign-in and account data are removed. Shared records, like a trade another person was part of, may stay in their history.</p></details>
-      <details><summary>Which languages does SiCi speak?</summary><p>English, Spanish, Haitian Creole, French, Arabic and Portuguese.</p></details>
+      <details><summary>Which languages does Sici speak?</summary><p>English, Spanish, Haitian Creole, French, Arabic and Portuguese.</p></details>
     </div>
 
     <h2>Report a problem</h2>
-    <p>Email <span class="ph">[support email]</span> with "Problem" in the subject line. For anything about someone misusing a board, include their name and the post, and we'll look into it.</p>
+    <p>Email <span class="ph">[support email]</span> with "Problem" in the subject line. For anything about someone misusing the Wire, include their name and the post, and we'll look into it.</p>
   </article></div>
 </div>
 </main>
@@ -489,7 +539,7 @@ footer .memorial{font-family:var(--display);font-size:18px;font-weight:500}
     <div class="legal-links">
       <a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a>
     </div>
-    <p class="indep">SiCi is an independent app. It is not affiliated with, endorsed by or sponsored by any employer or union.</p>
+    <p class="indep">Sici is an independent app. It is not affiliated with, endorsed by or sponsored by any employer or union.</p>
   </div>
 </footer>
 
